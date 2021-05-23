@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+<bean id = "answer1" class = "Answer">
+<property name = "id"><value>111</value></property>
+<property name = "name"><value>The Spring applications are loosely coupled because of dependency injection</value></property>
+<property name = "by"><value>Manish Tiwari</value></property>
+</bean>
+
+<bean id = "answer2" class = "Answer">
+<property name = "id"><value>112</value></property>
+<property name = "name"><value>Using Spring, We can create web based applications</value></property>
+<property name = "by"><value>Ankesh Mishra</value></property>
+</bean>
+
+<bean id = "obj" class = "Question">
+<property name = "id"><value>112</value></property>
+<property name = "ques"><value>What is Spring in Java?</value></property>
+<property name = "answers">
+<list>
+<ref bean = "answer1"/>
+<ref bean = "answer2"/>
+</list>
+</property>
+
+</bean>
+
+</beans>
