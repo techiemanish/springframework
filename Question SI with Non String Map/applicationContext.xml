@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+<bean id = "answer1" class = "Answer">
+<property name = "id"><value>124</value></property>
+<property name = "answer"><value>Java is programming language.</value></property>
+<property name = "postedDate"><value>24/05/2021</value></property>
+</bean>
+
+<bean id = "answer2" class = "Answer">
+<property name = "id"><value>125</value></property>
+<property name = "answer"><value>Java is based on OOPs.</value></property>
+<property name = "postedDate"><value>21/05/2021</value></property>
+</bean>
+
+<bean id = "user1" class = "User">
+<property name = "id"><value>22</value></property>
+<property name = "name"><value>Manish Tiwari</value></property>
+<property name = "email"><value>manish@mycscode.com</value></property>
+</bean>
+
+<bean id = "user2" class = "User">
+<property name = "id"><value>32</value></property>
+<property name = "name"><value>Ankesh Mishra</value></property>
+<property name = "email"><value>ankesh@mycscode.com</value></property>
+</bean>
+
+<bean id = "q" class ="Question">
+<property name = "id"><value>111</value></property>
+<property name = "ques"><value>What is Java?</value></property>
+<property name = "answers">
+<map>
+<entry key-ref = "answer1" value-ref ="user1" ></entry>
+<entry key-ref = "answer2" value-ref ="user2" ></entry>
+</map>
+</property>
+</bean>
+
+</beans>
+
