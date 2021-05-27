@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id = "javaCollection" class = "JavaCollections">
+<property name = "addressList">
+<list>
+<value>Java</value>
+<value>SpringFramework</value>
+<value>MERN</value>
+<value>Python</value>
+<value>DevOps</value>
+<value>DevOps</value>
+</list>
+</property>
+
+<property name ="addressSet">
+<set>
+<value>Java</value>
+<value>SpringFramework</value>
+<value>MERN</value>
+<value>Python</value>
+<value>DevOps</value>
+<value>DevOps</value>
+</set>
+</property>
+
+<property name = "addressMap">
+<map>
+<entry key = "1" value = "Java"></entry>
+<entry key = "2" value = "SpringFramework"></entry>
+<entry key = "3" value = "MERN"></entry>
+<entry key = "4" value = "Python"></entry>
+<entry key = "5" value = "DevOps"></entry>
+<entry key = "6" value = "DevOps"></entry>
+</map>
+</property>
+
+<property name = "addressProp">
+<props>
+<prop key = "one" >Java"</prop>
+<prop key = "two" >SpringFramework</prop>
+<prop key = "three" >MERN</prop>
+<prop key = "four" >Python</prop>
+<prop key = "five" >DevOps</prop>
+<prop key = "six" >DevOps</prop>
+</props>
+</property>
+</bean>
+
+
+</beans>
